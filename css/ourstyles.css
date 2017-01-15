@@ -1,0 +1,144 @@
+/*
+	Custom CSS setting to be modified
+	by the AISES students.
+*/
+
+@media all {
+
+  /* '.ourheader' refers to the '<div class="ourheader"> in the HTML' */
+    .ourheader {
+      font-family: Times;
+      font-size: 8pt;
+      background-color: #A31F34;
+    }
+
+
+    .mainbody {
+      background: url('../img/retina_wood.png'); 
+    }
+
+    .footer {
+      
+    }
+
+
+  /* Navigation Bar Styling */
+    .ym-hlist { width: 100% }
+    .ym-hlist ul { list-style-type: none; padding: 0.5em 2em; width: 100%;}
+    .ym-hlist ul li { display: inline-block; }
+    .ym-hlist ul li:hover { }
+    .ym-hlist ul li a { 
+      padding: 0 0.5em; /* top right bottom left */
+      width: auto;
+    }
+    .ym-hlist ul li a:visited { }
+    .ym-hlist ul li a:hover { }
+    .ym-hlist ul li:hover a { color: auto; } /* Button text color */
+
+    .ym-hlist ul li:hover > ul { display:block; }
+    .ym-hlist ul ul { display:none; position:absolute; min-width: 225px; }
+    .ym-hlist ul ul li { display:block; }
+
+
+
+  /* Photo Banner on Home Page */
+    .viewer{overflow: hidden;}
+    .photobanner {
+      height: 262px;
+      width: 20000px;
+      margin-bottom: 80px;
+    }
+
+    /*keyframe animations*/
+    .first {
+        -webkit-animation: bannermove 65s linear infinite; /*speed*/
+           -moz-animation: bannermove 65s linear infinite;
+            -ms-animation: bannermove 65s linear infinite;
+             -o-animation: bannermove 65s linear infinite;
+                animation: bannermove 65s linear infinite;
+    }
+     
+    @keyframes "bannermove" {
+     0% {margin-left: 0px;}
+     100% {margin-left: -3933px;} /* CHANGE THIS WHEN MODIFYING PHOTO LIST */
+    }
+    @-moz-keyframes bannermove {
+     0% {margin-left: 0px;}
+     100% {margin-left: -3933px;} /* = (total photo widths with no repeats) + 25px */
+    }
+    @-webkit-keyframes "bannermove" {
+     0% {margin-left: 0px;}
+     100% {margin-left: -3933px;}
+    }
+    @-ms-keyframes "bannermove" {
+     0% {margin-left: 0px;}
+     100% {margin-left: -3933px;}
+    }
+    @-o-keyframes "bannermove" {
+     0% {margin-left: 0px;}
+     100% {margin-left: -3933px;}
+    }
+    /* Hover effect */   /*
+    .photobanner img {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    .photobanner img:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+     
+        -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+        box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    } /* End Photo Banner */ 
+
+
+  /* Pop-up Text for Members' majors */
+    span.dropt {border-bottom: thin dotted; background: #ffeedd;}
+    span.dropt:hover {text-decoration: none; background: #ffffff; z-index: 6; }
+    span.dropt span {position: absolute; left: -9999px; margin: 20px 0 0 0 0px; padding: 3px 3px 3px 3px; border-style:solid; border-color:black; border-width:1px; z-index: 6;}
+    span.dropt:hover span {left: 2%; background: #ffffff;}
+    span.dropt span {position: absolute; left: -9999px; margin: 4px 0 0 0px; padding: 3px 3px 3px 3px;  border-style:solid; border-color:black; border-width:1px;}
+    span.dropt:hover span {margin: 20px 0 0 270px; background: #ffffff; z-index:6;}
+
+
+  /* Sticky Navigation Bar */   
+    .fixed {
+      width: 100%;
+      overflow: hidden;
+      position: fixed;
+      line-height: 1em;
+      background: #222;
+      top: 0;
+      z-index: 1;
+    }
+
+    .fullWidth {
+    	width: 100%;
+    }                      
+
+
+} /* end '@media' section */
+
+/*
+   ___    ___    __   __________
+  |   \  /   |  |  | |___    ___|
+  |    \/    |  |  |     |  |
+  |          |  |  |     |  |
+  |  |\  /|  |  |  |     |  |
+  |__| \/ |__|  |__|     |__|
+            ___       __    ____   _________    _____
+           /   \     |  |  *    ) |   ______|  *     )
+          /     \    |  | (       |  |___     (
+         /  /_\  \   |  | ( * *   |  |___|     ( * *
+        /   ___   \  |  |       * |  |              *
+       /   /   \   \ |  | (      )|  |______  (      )
+      /___/     \___\|__|  \* * / |_________|  \* * /
+*/

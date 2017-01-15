@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.9.4//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+DTSTART:20070311T020000
+TZNAME:EDT
+TZOFFSETTO:-0400
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+DTSTART:20071104T020000
+TZNAME:EST
+TZOFFSETTO:-0500
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=America/New_York:20141010T230000
+UID:7dgnb22j19okphf3cvcdhltefs@google.com
+DTSTAMP:20140919T191629Z
+LOCATION:4-237
+DESCRIPTION:Join AISES in watching Smoke Signals\, which is about a youn
+ g Indian man named Thomas\, who is a nerd in his reservation\, wearing o
+ versize glasses and telling everyone stories no-one wants to hear. His p
+ arents died in a fire in 1976\, and Thomas was saved by Arnold. Arnold s
+ oon left his family (and his tough son Victor)\, and Victor hasn't seen 
+ his father for 10 years. When Victor hears Arnold has died\, Thomas offe
+ rs him funding for the trip to get Arnold's remains\, but only if Thomas
+  will also go with him. Thomas and Victor hit the road.
+URL;VALUE=URI:http://www.imdb.com/title/tt0120321/
+STATUS:CONFIRMED
+SEQUENCE:12
+SUMMARY:Smoke Signals - AISES Movie Presentation
+LAST-MODIFIED:20140919T191629Z
+DTSTART;TZID=America/New_York:20141010T193000
+CREATED:20140901T192223Z
+END:VEVENT
+END:VCALENDAR

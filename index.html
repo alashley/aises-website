@@ -1,0 +1,222 @@
+<!-- 
+	Hello HTML editor for MIT AISES or a wandering web developer!
+	
+	Interested in learning what our site uses and how it works?
+	
+	Welcome to the home page tutorial/readme, where we teach you about how our specifc
+framework and javascript thingamajigs! We hope that you know at least basic HTML, so we 
+do not need to explain how headers work and such, but we will talk about any specific 
+structure or techniques used that might be hard to see initially.
+
+	Our site is a basic HTML constructed site with a YAML framework. You can find the 
+various different classes on the YAML website: http://www.yaml.de.
+
+	If you are looking for specific things to work on, here are a few suggestions for 
+improving the website:
+1) Make a dedicated mobile version?
+2) Forum.
+
+	Have fun developing! 
+		-Aaron Ashley '16 (aaron.ashley1701@gmail.com)
+		-Dillon J Battaglia '16 (link4707@gmail.com)
+ -->
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8"/>
+	  <title>MIT AISES</title>
+	  <meta name="description" content="The MIT Chapter of the American Indian Science and 
+	  Engineering Society"/>
+	  <meta name="author" content="MIT AISES"/>
+	  <!-- mobile viewport optimisation -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <!-- stylesheets -->
+	  <link rel="stylesheet" href="yaml/core/base.css" type="text/css"/>
+	  <link rel="stylesheet" href="css/central.css" type="text/css"/>
+	  <!--[if lte IE 7]>
+	  <link rel="stylesheet" href="yaml/core/iehacks.min.css" type="text/css"/>
+	  <![endif]-->
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!--adds JQuery, which is -->
+	  <script src="js/jquery.fancybox.js"></script> <!--adds photoviewer capability-->
+	  <script src="js/stickybar.js"></script>
+	</head>
+	<body>
+	  <!--Header Above Nav Bar-->
+  <header class="ourheader"><!--customize this in css/ourstyles.css -Aaron -->
+  	<div class="ym-wrapper">
+      <div class="ym-wbox"> 
+        <center>
+          <h1>
+            <img src="img/AISES_Logo_Dream_Color.png" width="10%" height="10%"></img>
+            MIT Chapter of AISES
+          </h1>
+        </center>
+      </div><!--end ym-wbox-->
+    </div><!--end ym-wrapper-->
+  </header>
+	  <!--Navigation Bar-->
+	  <nav id="level2" role="navigation">
+		<div class="ym-wrapper">
+		  <div class="ym-hlist">
+			<ul>
+			  <li class="active"><strong>Home</strong></li> <!-- We strong the text and 
+			  list the class as active for the individual page.-->
+			  <li><a href="about.html">About</a></li>
+			  <li><a href="events.html">Events</a></li>
+			  <li><a href="photos.html">Photos</a></li>
+			  <li><a href="people.html">People</a></li>
+			  <li style="display:none;">
+				<label for="ym-smnav" style="padding: 0 0.5em; 
+				color: rgba(255,255,255,.8)">Navigation:</label>
+				<select id="ym-smnav" style="font-size: 16px;">
+				  <option value="0" selected="selected" disabled="disabled">Go to...
+				  </option>
+				  <option data-target="#">Home</option>
+				  <option data-target="#">About</option>
+				  <option data-target="#">Events</option>
+				  <option data-target="#">Photos</option>
+				  <option data-target="#">People</option>
+				</select>
+			  </li>
+			</ul>
+		  </div> <!-- end ym-hlist-->
+		</div> <!-- end ym-wrapper-->
+	</nav>
+	<!--Body Below Nav Bar-->
+	<main class="mainbody">
+		  <div class="ym-wrapper fullWidth">
+			<div class="ym-wbox">
+				<section>
+					<div class="ym-grid linearize-level-1">   
+						<article class="ym-g25 ym-gl">
+							 <div class="ym-gbox-left">
+								<h4>About Us</h4> 
+								<p class="box info">
+									We are a group of students of Native descent and/or with an interest in Native culture. Join us during the school year! We have meetings every month (with food), a few MIT-wide events per term, and 
+									occasionally go on trips! Last fall, we had a 
+									blast taking a 
+									trip to Orlando for the AISES national conference! This spring, we are going to Cornell for the AISES Regional Conference and to Dartmouth for their annual powwow.<br><br>
+									<a class="ym-button ym-next" href="about.html">
+									Go to About</a>
+								</p>
+							 </div>
+						</article>
+						<article class="ym-g50 ym-gl">
+							<div class="ym-gbox">
+							<h4>Scrolling Photo Highlights</h4>
+								<div class="box info viewer">
+								<!-- EACH IMAGE IS 262px TALL!!-->
+									<div class="photobanner">
+										<a href="img/sum14/photo-01.JPG" class="fancybox" 
+										rel="group" title="AISES Highlights" 
+										data-fancybox-group="banner" 
+										data-caption="sa;jflsakjfasdlfjals;kfjlsjf">
+										<img class="first" 
+										src="img/homegallery/photo-01.jpg" alt="">
+										</a>
+										<img src="img/homegallery/photo-02.jpg" alt="">
+										<img src="img/homegallery/photo-03.jpg" alt="">
+										<img src="img/homegallery/photo-04.jpg" alt="">
+										<img src="img/homegallery/photo-05.jpg" alt="">
+										<img src="img/homegallery/photo-06.jpg" alt="">
+										<img src="img/homegallery/photo-07.jpg" alt="">
+										<img src="img/homegallery/photo-08.jpg" alt="">
+										<img src="img/homegallery/photo-09.jpg" alt="">
+										<img src="img/homegallery/photo-10.jpg" alt="">
+										<img src="img/homegallery/photo-11.jpg" alt="">
+										<img src="img/homegallery/photo-12.jpg" alt="">
+										<img src="img/homegallery/photo-01.jpg" alt="">
+										<img src="img/homegallery/photo-02.jpg" alt="">
+										<img src="img/homegallery/photo-03.jpg" alt="">
+									</div>
+								</div> 
+							</div>
+						</article>
+						<article class="ym-g25 ym-gl">
+							<h4>Highlighted Events</h4>
+							<section class="box info">
+								<h6> Next PUBLIC Event </h6>
+								<a href="events.html" target="_blank">Movie Screening "Crooked Arrows"<br>Friday, Mar. 11, 6pm, <br>Location TBD<br><br>
+								<h6> Next AISES-only Event </h6>
+								<a href="events.html" target="_blank">General Body Meeting #2</a><br>Friday, Mar. 4, 6pm, <br>Location TBD <br>	<br>
+								<a class="ym-button ym-next" href="events.html">Go to 
+								Events</a>
+							</section>
+							<center>
+								<h5> Like us on Facebook!</h5>
+								<a href="https://www.facebook.com/aises.mit" 
+								class="social-icons" title="Like us on Facebook!" 
+								target="_blank"><img src="img/FBLogo" 
+								alt="MIT on Facebook" width="30"></a>
+							</center>
+						</article>
+			  		</div> <!-- end ym-grid -->
+			  		<div class="ym-grid linearize-level-1">
+			  			<center>
+			  				<h5>We would like to thank our sponsors!</h5>
+							<section>
+								<a href="http://www.3m.com"><img src="img/3Mlogo.png" 
+								height="40"></img></a>     
+								<a href="http://www.boeing.com/boeing/"><img 
+								src="img/BoeingLogo.svg.png" height="40"></img></a>
+							</section>
+			  			</center>
+			  		</div>
+				</section>
+			</div> <!-- end ym-wbox -->
+		  </div> <!-- end ym-wrapper -->
+	</main>
+	<footer>
+	   <div class="ym-wrapper">
+		  <div class="ym-wbox">
+			 <div class="ym-grid linearize-level-1">
+				<div class="ym-g20 ym-gl">
+				   <center><a href="http://mit.edu" title="MIT Main Website"><img src="img/MITLogo.png" height="65"></img></a></center>
+				</div>
+				<div class="ym-g60 ym-gl">
+				   <center>
+					  © MIT AISES - 
+					  <a href="mailto:aises-request@mit.edu">aises-request@mit.edu</a>
+				   </center>
+				   <center>
+				   		<a href="https://www.facebook.com/aises.mit" class="social-icons" 
+				   		title="Like us on Facebook!" target="_blank">
+					  	<img src="img/FBLogo" alt="MIT on Facebook" width="30"></a>
+				   </center>
+				   <center>
+					Last updated on August 11, 2015
+				   </center>
+				</div>
+				<div class="ym-g20 ym-gl">
+					<center> 
+						<a href="http://www.aises.org" title="AISES National Website">
+						<img src="img/AISESlogo.png" height="65"></img></a>
+					</center>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+		  $(".fancybox").fancybox();
+		});
+	</script>
+	</body>
+	<!--
+	   ___    ___    __   __________
+	  |   \  /   |  |  | |___    ___|
+	  |    \/    |  |  |     |  |
+	  |          |  |  |     |  |
+	  |  |\  /|  |  |  |     |  |
+	  |__| \/ |__|  |__|     |__|
+				___       __    ____   _________    _____
+			   /   \     |  |  *    ) |   ______|  *     )
+			  /     \    |  | (       |  |___     (
+			 /  /_\  \   |  | ( * *   |  |___|     ( * *
+			/   ___   \  |  |       * |  |              *
+		   /   /   \   \ |  | (      )|  |______  (      )
+		  /___/     \___\|__|  \* * / |_________|  \* * /
+	-->
+</html>
